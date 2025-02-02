@@ -1,0 +1,13 @@
+TABLES
+tables - <table></table>
+row- <tr></tr>
+header-<th></th>
+to insert a data -<td></td>
+colspan = increase the col, merges the column 
+rowspan = increase the row,merges the row
+
+DEFINITION
+DL- defintion list 
+DT- defintion term 
+DD - defintion of the DEFINITION
+
