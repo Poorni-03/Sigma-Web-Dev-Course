@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        div{
+            background-color: red;
+        }
+        /* class selector */
+        .yellow{
+            color:aqua;
+            background-color: bisque;
+        }
+        /* id selector */
+        #green{
+            color: azure;
+            background-color: green;
+        }
+        /* child selector */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+        /* descendent selector */
+        div article p{
+            color: aliceblue;
+            background-color: aquamarine;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector  */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: red;
+            background-color: aquamarine;
+        }
+        a:hover{
+            color:blue;
+            background-color: bisque;
+        }
+        p:first-child{
+            background-color: blueviolet;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+         <p>i am selector</p>
+         <p>i am second selector</p>
+    </main>
+    <div>
+        i am a div
+        <p>I'm a para inside div</p>
+    </div>
+    <div>
+        i am a div
+        <article>
+            <p>I'm a para inside div</p>
+        </article>
+    </div>
+    <div class="yellow">
+        i'm another div
+    </div>
+    <div id="green">
+        i'm third div
+    </div>
+    <a href="google.com">go to google</a>
+    <a href="www.facebook.com">go to facebook</a>
+    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+</body>
+</html>

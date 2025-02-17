@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* the specificity of h1 (element selector) is 1 */
+        h1{
+            color:aqua ;
+        }
+        /* the specificity of h1 (class selector) is 10 */
+        .yellow{
+            color: yellow;
+        }
+        /* the specificity of h1 (class selector) is 10 */
+        .cred{
+            color: red !important;
+        }
+        /* the specificity of h1 (class selector) is 10 and it is the origin  */
+        .cpurple{
+            color:purple;
+        }
+         /* the specificity of h1 (attribute selector) is 10 */
+        [data-x="a"]{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS specificity</h1>
+    </div>
+</body>
+</html>
