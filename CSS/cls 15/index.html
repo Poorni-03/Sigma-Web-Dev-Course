@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid </title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: repeat(5, 100px);
+            grid-template-columns: repeat(5,100px);
+            color: rgb(0, 0, 0);
+            background-color: rgb(169, 167, 233);
+            border: 2px solid white ;
+            grid-template-areas:
+   " .     item-3  .      .      .   "
+   " item-3 item-2  item-2  item-2  item-2 "
+   " item-3 item-1  item-1  .      .   "
+   " item-3 item-1  item-1  .      .   "
+   " .     item-3  .      .      .   ";
+
+        }
+        .item{
+            display: grid;
+            justify-items: center;
+            place-items: center;
+            border: 2px solid black;
+        }
+        .item-1 {
+            /* grid-column: 2/5;
+            grid-row: 3/4; */
+            grid-area: item-1;
+        }
+        .item-2{
+            /* grid-row: 4/5;
+            grid-column: 2/3; */
+          grid-area: item-2;
+        }
+        .item-3{
+            grid-area: item-3;
+        }
+        .item-4{
+            /* grid-column: 1/4;
+            grid-row: 4/6; */
+            grid-area: item-4;
+        }
+        .item-5{
+            grid-area: item-5;
+        }
+        .item-6{
+            grid-area: item-6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+    </div>
+</body>
+</html>
